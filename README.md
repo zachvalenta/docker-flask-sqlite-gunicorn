@@ -31,8 +31,11 @@ You can also work with the app locally (outside of a container, on your own oper
 # install deps
 poetry install
 
-# start dev server
+# run Flask dev server
 make flask
+
+# run Flask behind gunicorn
+make guni
 ```
 
 ## FYI

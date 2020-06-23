@@ -3,9 +3,10 @@ name = "flask-sqlite-gunicorn"
 
 help:
 	@echo
-	@echo "🍶 FLASK"
+	@echo "🏡 LOCAL SERVERS"
 	@echo
-	@echo "flask:       start app"
+	@echo "flask:       run Flask dev server"
+	@echo "guni:        run Flask behind gunicorn"
 	@echo
 	@echo "🚢 DOCKER"
 	@echo
@@ -28,11 +29,14 @@ help:
 	@echo
 
 #
-# 🍶 FLASK
+# 🏡 LOCAL SERVERS
 #
 
 flask:
 	poetry run flask run
+
+guni:
+	poetry run gunicorn -b 127.0.0.1:5000 app:app
 
 #
 # 🚢 DOCKER
