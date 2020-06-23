@@ -40,7 +40,6 @@ make guni
 
 ## FYI
 
-
 I have a few other projects like this:
 
 * [Docker + Flask](https://github.com/zachvalenta/docker-flask)
@@ -53,3 +52,5 @@ $ docker --version  # Docker version 18.09.2, build 6247962
 $ docker-compose --version  # docker-compose version 1.23.2, build 1110ad01
 $ docker-machine --version  # docker-machine version 0.16.1, build cce350d7
 ```
+
+There are some tricky aspects of working with gunicorn when it comes to Docker that I haven't addressed here; I'd like to keep this repo as straightforward as possible, so it can be used as a baseline for other projects. For info on those tricky aspects, read more [here](https://pythonspeed.com/articles/gunicorn-in-docker/).
