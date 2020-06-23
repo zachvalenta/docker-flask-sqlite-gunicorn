@@ -3,7 +3,8 @@
 Bare bones implementation of:
 
 * a Flask app
-* talking to a database
+* running behind gunicorn
+* talking to a database (SQLite)
 * Dockerized
 
 ## how to run?
@@ -30,14 +31,19 @@ You can also work with the app locally (outside of a container, on your own oper
 # install deps
 poetry install
 
-# start server
+# start dev server
 make flask
 ```
 
 ## FYI
 
-* I have another project that focuses on [just Docker and Flask, no database](https://github.com/zachvalenta/docker-flask-skeleton).
-* Here are the Docker versions I'm working with:
+
+I have a few other projects like this:
+
+* [Docker + Flask](https://github.com/zachvalenta/docker-flask)
+* [Docker + Flask + SQLite](https://github.com/zachvalenta/docker-flask-sqlite)
+
+Here are the Docker versions I'm working with:
 
 ```sh
 $ docker --version  # Docker version 18.09.2, build 6247962
