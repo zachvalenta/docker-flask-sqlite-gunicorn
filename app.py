@@ -39,7 +39,7 @@ ROUTES
 
 @app.route('/healthcheck')
 def index():
-    return "app runnning", 200
+    return "docker-flask-sqlite-gunicorn runnning", 200
 
 @app.route("/get-things")
 def read():
